@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 export type Colors = "default" | "purple" | "blue" | "red" | "fuchsia";
 
@@ -25,7 +25,7 @@ export function Button({ children, color = "default", href }: Props) {
   return (
     <Tag
       href={href}
-      className={`bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 px-40 py-4 rounded-lg flex gap-2 border ${colorClass}`}
+      className={`bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-600 w-full md:px-40 py-4 rounded-lg flex gap-2 justify-center border ${colorClass}`}
     >
       {children}
     </Tag>
